@@ -1,2 +1,220 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: TrajanProRegular;
+  src: url(assets/fonts/TrajanProRegular/trajanp0-webfont.ttf) format("opentype");
+}
+.html{
+  overflow-x: hidden;
+}
+.body{
+  overflow-x: hidden;
+}
+
+.alignLeft{
+  text-align: left;
+}
+.alignRight{
+  text-align: right;
+}
+
+.FontDarkGreen{
+  color: #0e5c11;
+}
+.FontGrey{
+  color: #a1aea5;
+}
+.FontTrajan{
+  font-family: 'TrajanProRegular';
+}
+.FontLarge{
+  font-size: 5em;
+}
+.noSelect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+
+
+.BackgroundGray{
+  background: #efefef;
+}
+
+.logo{
+  margin: 20em 0 0 0;
+  overflow-x: hidden;
+}
+
+.outerCircle {
+  background-color: transparent;
+  border: 8px solid #a1aea5;
+  opacity: .5;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 100px;
+  width: 7em;
+  height: 7em;
+  margin: 0 auto;
+  -moz-animation: spin 3s infinite ease-in-out;
+  -webkit-animation: spin 3s infinite ease-in-out;
+}
+.innerCircle {
+  background-color: transparent;
+  border: 5px solid #0e5c11;
+  opacity: .5;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: 100px;
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  position: relative;
+  top: -6em;
+  -moz-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% { -moz-transform:rotate(0deg); }
+  100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform:rotate(0deg); }
+  100% { -webkit-transform:rotate(360deg); }
+}
+
+.spinnerB{
+  position: relative;
+  top: -6.4em;
+  opacity: 0.8;
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  font-size: 25px;
+}
+.spinnerC{
+  opacity: 0.8;
+  position: relative;
+  top: -5.9em;
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+.menu{
+  overflow: hidden;
+  margin: 0 0 10em 0;
+}
+.spinner{
+  text-align: center;
+}
+.rightMenuOptions{
+  text-align: left;
+  top: 2.5em;
+}
+.leftMenuOptions{
+  text-align: right;
+  top: 2.5em;
+}
+.menuLeftOne{
+
+}
+.menuLeftTwo{
+  top: 2em;
+  position: relative;
+}
+.menuLeftThree{
+  top: 4em;
+  position: relative;
+}
+.menuRightOne{
+
+}
+.menuRightTwo{
+  top: 2em;
+  position: relative;
+}
+.menuRightThree{
+  top: 4em;
+  position: relative;
+}
+.menuButton{
+  color: #a1aea5;
+  font-weight: bold;
+  opacity: .7;
+}
+.menuButton:hover{
+  color: #0e5c11;
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+
+
+.about{
+  width: 100%;
+  margin: 0 0 10em 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.aboutBasics{
+  width: 100%;
+  margin: 5em 0 2em 0;
+}
+.aboutBasicsMainText{
+  text-align: left;
+  font-size: 23px;
+  opacity: 0.9%;
+  font-family: Proxima Nova;
+}
+.bonsaiLogo{
+  top: -2em;
+  margin: 0 2em 0 0;
+  position: relative;
+  width: 15em;
+  height: auto;
+}
+.aboutExpand{
+  width: 100%;
+  text-align: center;
+}
+.expandArrow{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #0e5c11;
+}
+/*.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-keyboard-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-program-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover*/
+/*{*/
+  /*background: #efefef;*/
+/*}*/
+
+
+.ourTeam{
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+.member{
+}
+.memberImg{
+  width: auto;
+  height: 20em;
+}
+.memberName{
+
+}
+
+
+
+
+.footerTemp{
+  width: 100%;
+  height: 100em;
+}
+
