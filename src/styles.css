@@ -4,11 +4,17 @@
   font-family: TrajanProRegular;
   src: url(assets/fonts/TrajanProRegular/trajanp0-webfont.ttf) format("opentype");
 }
-.html{
+html{
   overflow-x: hidden;
 }
-.body{
+body{
   overflow-x: hidden;
+  background-image: url("/assets/img/charts2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% auto;
+
 }
 
 .alignLeft{
@@ -16,6 +22,9 @@
 }
 .alignRight{
   text-align: right;
+}
+.alignCenter{
+  text-align: center;
 }
 
 .FontDarkGreen{
@@ -38,6 +47,9 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
+.pointer{
+  cursor: pointer;
+}
 
 
 
@@ -45,9 +57,26 @@
   background: #efefef;
 }
 
+
+
+
+
+.SectionHeader{
+  font-size: large;
+  font-weight: bold;
+}
+.SectionSeperator{
+  margin: 3em 0 0 0;
+}
+
+
+
+
+
 .logo{
-  margin: 20em 0 0 0;
+  padding: 20em 0 0 0;
   overflow-x: hidden;
+  background: white;
 }
 
 .outerCircle {
@@ -107,7 +136,8 @@
 
 .menu{
   overflow: hidden;
-  margin: 0 0 10em 0;
+  padding: 0 0 10em 0;
+  background: white;
 }
 .spinner{
   text-align: center;
@@ -158,18 +188,18 @@
 
 .about{
   width: 100%;
-  margin: 0 0 10em 0;
-  padding: 0;
+  padding: 20em 0 10em 0;
   overflow-x: hidden;
+  background: white;
 }
 .aboutBasics{
   width: 100%;
-  margin: 5em 0 2em 0;
+  padding: 5em 0 2em 0;
 }
 .aboutBasicsMainText{
   text-align: left;
   font-size: 23px;
-  opacity: 0.9%;
+  opacity: 0.9;
   font-family: Proxima Nova;
 }
 .bonsaiLogo{
@@ -194,11 +224,56 @@
 /*}*/
 
 
+
+
+
+.WhatWeDo{
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20em 0 20em 0;
+  background: white;
+}
+.capability{
+
+}
+.capabilityImage{
+  width: 9em;
+  height: auto;
+  text-align: center;
+}
+.capabilitiesHeader{
+  width: 100%;
+  text-align: center;
+}
+.WhatWeDoOptions{
+  margin: 7em 0 7em 0;
+}
+.WhatWeDoHeader{
+  margin: 0 0 12em 0;
+}
+.WhatWeDoContent{
+
+}
+.WhatWeDoSeperator{
+  margin: 3em 0 0 0;
+}
+.WhatWeDoContentHeader{
+  font-size: large;
+  font-weight: bold;
+}
+.WhatWeDoContentMain{
+  padding-left: 1em;
+}
+
+
 .ourTeam{
   width: 100%;
   height: auto;
+  margin: 10em 0 10em 0;
+  padding: 7em 0 7em 0;
   overflow-x: hidden;
   text-align: center;
+  background: white;
 }
 .member{
 }
@@ -213,8 +288,11 @@
 
 
 
-.footerTemp{
-  width: 100%;
-  height: 100em;
-}
 
+
+.contact{
+  padding: 25em 0 25em 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: white;
+}
