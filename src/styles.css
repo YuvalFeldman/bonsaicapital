@@ -14,7 +14,19 @@ body{
   background-attachment: fixed;
   background-position: center;
   background-size: 100% auto;
+}
 
+.opacity30{
+  opacity: 0.3;
+}
+.opacity60{
+  opacity: 0.6;
+}
+.opacity90{
+  opacity: 0.9;
+}
+.opacity100{
+  opacity: 0.9;
 }
 
 .alignLeft{
@@ -192,6 +204,9 @@ body{
   overflow-x: hidden;
   background: white;
 }
+.AboutHeaderPadding{
+  padding-top: 4em;
+}
 .aboutBasics{
   width: 100%;
   padding: 5em 0 2em 0;
@@ -230,7 +245,7 @@ body{
 .WhatWeDo{
   width: 100%;
   overflow-x: hidden;
-  padding: 20em 0 20em 0;
+  padding: 15em 0 20em 0;
   background: white;
 }
 .capability{
@@ -275,6 +290,9 @@ body{
   text-align: center;
   background: white;
 }
+.profiles{
+  padding: 3em 0 3em 0;
+}
 .member{
 }
 .memberImg{
@@ -295,4 +313,7 @@ body{
   width: 100%;
   overflow-x: hidden;
   background: white;
+}
+.emailForm{
+  margin: 5em 0 0 0;
 }

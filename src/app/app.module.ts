@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCheckboxModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
