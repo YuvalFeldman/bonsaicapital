@@ -16,6 +16,10 @@ body{
   background-size: 100% auto;
 }
 
+.width90percent{
+  width: 90%;
+}
+
 .opacity30{
   opacity: 0.3;
 }
@@ -39,6 +43,9 @@ body{
   text-align: center;
 }
 
+.FontBold{
+  font-weight: bold;
+}
 .FontDarkGreen{
   color: #0e5c11;
 }
@@ -74,7 +81,7 @@ body{
 
 
 .SectionHeader{
-  font-size: large;
+  font-size: 2em;
   font-weight: bold;
 }
 .SectionSeperator{
@@ -83,6 +90,20 @@ body{
 
 
 
+
+
+.staticMenu{
+  background: white;
+  border-bottom: #a1aea5 solid 1px;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  z-index: 99999;
+}
+.StaticMenuOption{
+  padding: 0.2em 0 0 0;
+}
 
 
 .logo{
@@ -209,7 +230,7 @@ body{
 }
 .aboutBasics{
   width: 100%;
-  padding: 5em 0 2em 0;
+  padding: 7em 0 4em 0;
 }
 .aboutBasicsMainText{
   text-align: left;
@@ -218,10 +239,10 @@ body{
   font-family: Proxima Nova;
 }
 .bonsaiLogo{
-  top: -2em;
+  top: -3.5em;
   margin: 0 2em 0 0;
   position: relative;
-  width: 15em;
+  width: 18em;
   height: auto;
 }
 .aboutExpand{
@@ -291,16 +312,24 @@ body{
   background: white;
 }
 .profiles{
-  padding: 3em 0 3em 0;
+  padding: 7em 0 3em 0;
 }
 .member{
+}
+.memberRight{
+  right: -10em;
+}
+.memberLeft{
+  left: -10em;
 }
 .memberImg{
   width: auto;
   height: 20em;
 }
 .memberName{
-
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 
@@ -315,5 +344,15 @@ body{
   background: white;
 }
 .emailForm{
-  margin: 5em 0 0 0;
+  margin: 7em 0 0 0;
+}
+.contactText{
+  font-size: 1.2em;
+  padding: 0.5em 2em 0 0;
+}
+.contactSingle{
+
+}
+.contactMulti{
+  height: 2em;
 }

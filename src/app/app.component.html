@@ -1,4 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="staticMenu">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'about'" class="pointer noSelect">About Us</span>
+    </div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'whatwedo'" class="pointer noSelect">What We Do</span>
+    </div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'ourteam'" class="pointer noSelect">Our Team</span>
+    </div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'contact'" class="pointer noSelect">Contact Us</span>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+
+
 <div class="logo noSelect">
   <div style="text-align:center" class="FontTrajan FontLarge">
     <span class="FontDarkGreen">Bonsai</span><span class="FontGrey">Capital</span>
@@ -6,30 +26,8 @@
 </div>
 
 
-<div class="menu noSelect">
-  <div class="row">
-    <div class="col-5 leftMenuOptions">
-      <span class="menuLeftOne menuButton">ABOUT US</span>
-      <span class="menuLeftTwo menuButton">INVESTMENT BANKING</span>
-      <span class="menuLeftThree menuButton">MARKET NEWS</span>
-    </div>
-    <div class="col-2 spinner">
-      <div style="overflow: hidden">
-        <div class="outerCircle"></div>
-        <div class="innerCircle"></div>
-        <div class="bonsaiSpinnerLogo"><span class="spinnerB FontDarkGreen">B</span><span class="spinnerC FontGrey">C</span></div>
-      </div>
-    </div>
-    <div class="col-5 rightMenuOptions">
-      <span class="menuRightThree menuButton">CONTACT US</span>
-      <span class="menuRightTwo menuButton">CORPORATE FUNDING</span>
-      <span class="menuRightOne menuButton">OUR TEAM</span>
-    </div>
-  </div>
-</div>
 
-
-<div class="about">
+<div class="about" id="about">
   <div class="row BackgroundGray AboutHeaderPadding">
     <div class="col">
       <div class="row">
@@ -39,7 +37,11 @@
       </div>
       <div class="row">
         <div class="col alignCenter noSelect SectionSeperator">
-          <span>----------</span>
+          <span>
+            <svg height="7" width="200">
+              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+            </svg>
+          </span>
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@
 
 
 
-<div class="WhatWeDo">
+<div class="WhatWeDo" id="whatwedo">
   <div class="row">
     <div class="col">
       <div class="row">
@@ -71,7 +73,9 @@
       </div>
       <div class="row">
         <div class="col alignCenter noSelect SectionSeperator">
-          <span>----------</span>
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
         </div>
       </div>
     </div>
@@ -82,7 +86,7 @@
     <div class="col-2 capability">
       <div class="row">
         <div class="col alignCenter">
-          <img class="capabilityImage pointer" src="../assets/img/bank.jpg">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'InvestmentBanking'}" (click)="selectWhatWeDo('InvestmentBanking')" src="../assets/img/bank.jpg">
         </div>
       </div>
       <div class="row">
@@ -94,7 +98,7 @@
     <div class="col-2 capability">
       <div class="row">
         <div class="col alignCenter">
-          <img class="capabilityImage pointer opacity30" src="../assets/img/money.jpg">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'FundRaising'}" (click)="selectWhatWeDo('FundRaising')" src="../assets/img/money.jpg">
         </div>
       </div>
       <div class="row">
@@ -106,7 +110,7 @@
     <div class="col-2 capability">
       <div class="row">
         <div class="col alignCenter">
-          <img class="capabilityImage pointer opacity30" src="../assets/img/puzzle.jpg">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'MNA'}" (click)="selectWhatWeDo('MNA')" src="../assets/img/puzzle.jpg">
         </div>
       </div>
       <div class="row">
@@ -118,7 +122,7 @@
     <div class="col-2 capability">
       <div class="row">
         <div class="col alignCenter">
-          <img class="capabilityImage pointer opacity30" src="../assets/img/graph.jpg">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'BusinessDevelopment'}" (click)="selectWhatWeDo('BusinessDevelopment')" src="../assets/img/graph.jpg">
         </div>
       </div>
       <div class="row">
@@ -134,10 +138,10 @@
     <div class="col-8">
       <div class="row">
         <div class="col-4 WhatWeDoContentHeader alignRight">
-          <span>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</span>
+          <span>{{whatWeDoLeft}}</span>
         </div>
         <div class="col-8 WhatWeDoContentMain alignLeft">
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui fringilla, hendrerit risus sit amet, aliquam nisl. Aliquam at suscipit turpis. Ut vehicula est vel velit posuere, ac imperdiet lacus dapibus. Cras elementum libero nec felis eleifend, a feugiat purus bibendum. Sed pellentesque velit dolor. Cras rhoncus vitae est ut vulputate. Aliquam placerat erat sed nulla ullamcorper, ut rhoncus lacus placerat. Morbi eleifend maximus iaculis. Etiam nec metus efficitur, dapibus elit in, convallis nunc. Sed ut commodo tellus. Ut egestas risus eget lobortis accumsan. Integer gravida a risus vel aliquam. Aliquam vestibulum odio sed purus pulvinar varius. Ut tincidunt accumsan facilisis. Aenean sit amet consectetur turpis, id hendrerit orci. Fusce vel mattis ex, ac interdum lorem.</span>
+          <span>{{whatWeDoRight}}</span>
         </div>
       </div>
     </div>
@@ -146,7 +150,7 @@
 </div>
 
 
-<div class="ourTeam">
+<div class="ourTeam" id="ourteam">
   <div class="row">
     <div class="col">
       <div class="row">
@@ -156,39 +160,65 @@
       </div>
       <div class="row">
         <div class="col alignCenter noSelect SectionSeperator">
-          <span>----------</span>
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
         </div>
       </div>
     </div>
   </div>
+
+
+
   <div class="row profiles">
-    <div class="col-4 member">
-    <span>
-      <img class="memberImg" src="../assets/img/UriProfile.jpg">
-    </span>
-      <br>
-      <span class="memberName">Uri Feldman</span>
+
+    <div class="col-4 member memberRight">
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/UriProfile.jpg">
+        </div>
+      </div>
+      <div class="row memberName">
+        <div class="col">
+          <span >Uri Feldman</span>
+        </div>
+      </div>
     </div>
+
+
+
     <div class="col-4 member">
-    <span>
-      <img class="memberImg" src="../assets/img/EranProfile.jpg">
-    </span>
-      <br>
-      <span class="memberName">Eran Ayzik</span>
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/EranProfile.jpg">
+        </div>
+      </div>
+      <div class="row memberName">
+        <div class="col">
+          <span>Eran Ayzik</span>
+        </div>
+      </div>
+
     </div>
-    <div class="col-4 member">
-    <span>
-      <img class="memberImg" src="../assets/img/KennyProfile.jpg">
-    </span>
-      <br>
-      <span class="memberName">Kenny Chan</span>
+    <div class="col-4 member memberLeft">
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/KennyProfile.jpg">
+        </div>
+      </div>
+      <div class="row memberName">
+        <div class="col">
+          <span>Kenny Chan</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
 
 
-<div class="contact">
+<div class="contact" id="contact">
   <div class="row">
     <div class="col">
       <div class="row">
@@ -198,7 +228,9 @@
       </div>
       <div class="row">
         <div class="col alignCenter noSelect SectionSeperator">
-          <span>----------</span>
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
         </div>
       </div>
     </div>
@@ -208,26 +240,33 @@
     <div class="col-2"></div>
     <div class="col-8">
       <div class="row">
-        <div class="col-5"></div>
+        <div class="col-5 alignRight contactText">
+          <span class="FontBold noSelect">
+            Contact us today!<br>
+          </span>
+          <span class="FontBold">
+            info@bonsaicapital.net
+          </span>
+        </div>
         <div class="col-7">
           <div class="row">
             <div class="col">
-              <mat-form-field class="example-full-width width90percent">
-                <input matInput placeholder="Name">
+              <mat-form-field class="example-full-width width90percent contactSingle">
+                <input matInput required placeholder="Name">
               </mat-form-field>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <mat-form-field class="example-full-width width90percent">
-                <input matInput placeholder="Mail">
+              <mat-form-field class="example-full-width width90percent contactSingle">
+                <input matInput required placeholder="Mail">
               </mat-form-field>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <mat-form-field class="example-full-width width90percent">
-                <textarea matInput placeholder="Message"></textarea>
+              <mat-form-field class="example-full-width width90percent contactMulti">
+                <textarea rows="5" matInput placeholder="Message"></textarea>
               </mat-form-field>
             </div>
           </div>

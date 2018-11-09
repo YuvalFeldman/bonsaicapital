@@ -7,6 +7,7 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
     MatExpansionModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
