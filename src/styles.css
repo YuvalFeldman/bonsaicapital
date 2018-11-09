@@ -166,6 +166,16 @@ body{
   font-size: 25px;
 }
 
+.animatedLogo{
+  height: 30em;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+.animatedBonsaiLogo{
+  height: 30em;
+  width: auto;
+}
 
 .menu{
   overflow: hidden;
@@ -288,6 +298,7 @@ body{
   margin: 0 0 12em 0;
 }
 .WhatWeDoContent{
+  white-space: pre-line;
 
 }
 .WhatWeDoSeperator{
