@@ -16,6 +16,22 @@ body{
   background-size: 100% auto;
 }
 
+.mobileShow {display: none;}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+  .mobileShow {display: inline;}
+}
+.mobileHide { display: inline; }
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+  .mobileHide { display: none;}
+}
+
+
 .width90percent{
   width: 90%;
 }
@@ -74,6 +90,10 @@ body{
 
 .BackgroundGray{
   background: #efefef;
+}
+
+.BackgroundWhite{
+  background: white;
 }
 
 
@@ -386,4 +406,108 @@ body{
 }
 .contactMulti{
   height: 2em;
+}
+.contactFormButton{
+  text-align: left;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+
+
+.logoMobile{
+  padding: 3em 0 1em 0;
+  background: white;
+  font-size: 2em;
+  height: auto;
+}
+.mobileAnimatedBonsaiLogo{
+  width: 60%;
+  height: auto;
+}
+.mobileAnimatedLogo{
+  text-align: center;
+  margin: 0;
+  padding: 0 0 5em 0;
+  background: white;
+}
+.mobileAbout{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 2em 0 3em 0;
+}
+.mobileAboutContent{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.mobileAboutContentHeader{
+  font-weight: bold;
+}
+.mobileWhatWeDo{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5em 0 3em 0;
+}
+.mobileWhatWeDoContent{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.mobileWhatWeDoImage{
+  width: 90%;
+  height: auto;
+}
+.mobileWhatWeDoOption{
+  text-align: center;
+  font-size: 0.7em;
+}
+.mobileWhatWeDoInfo{
+  width: 100%;
+  text-align: center;
+  padding: 2em 0 2em 0;
+  margin: 0;
+}
+.mobileWhatWeDoInfoMore{
+  padding: 1em 0 0 0;
+}
+.mobileTeam{
+  width: 100%;
+  text-align: center;
+  margin: 2em 0 2em 0;
+  padding: 3em 0 7em 0;
+}
+.mobileTeamMember{
+
+}
+.mobileTeamMemberImage{
+  height: auto;
+  width: 90%;
+}
+.mobileTeamMemberName{
+  padding: 1em 0 0 0;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.mobileTeamInfo{
+  padding: 3em 0 0 0;
+}
+.mobileContact{
+  width: 100%;
+  text-align: center;
+  margin: 2em 0 2em 0;
+  padding: 5em 0 3em 0;
+}
+.mobileContactInfo{
+  width: 100%;
+  text-align: center;
+}
+.contactHeader{
+  font-size: 1.2em;
+}
+.contactMail{
+  font-size: 1.2em;
 }

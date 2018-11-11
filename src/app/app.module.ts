@@ -8,6 +8,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
 
-  constructor(){
+@Injectable()
+export class AppComponent {
+  connectFormName = "";
+  connectFormMail = "";
+  connectFormMessage = "";
+
+  constructor(private http: HttpClient){
     this.changeMemberText('uri');
   }
+
+
   title = 'bonsaicapital';
 
   whatWeDo =
@@ -91,5 +100,12 @@ export class AppComponent {
     }
   }
 
+  public SendMail(){
 
+    var url = "https://script.google.com/macros/s/AKfycbzwbE1RAs09WwaxhnUodcOBDilaz8uRgFc_uATQze1VYBQX5H0/exec";
+
+    return this.http.get(url)
+
+
+  }
 }
