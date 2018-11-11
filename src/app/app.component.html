@@ -175,25 +175,30 @@
 
   <div class="row profiles">
 
-    <div class="col-4 member memberRight">
+    <div [ngClass]="{'col-4':true, member:true, memberRight:true}">
       <div class="row">
-        <div class="col">
-          <img class="memberImg" src="../assets/img/UriProfile.jpg">
+        <div [ngClass]="{col:true, opacity60:memberInfoSelected!='uri'}">
+          <img (click)="changeMemberText('uri')" class="memberImg pointer" src="../assets/img/UriProfile.jpg">
         </div>
       </div>
       <div class="row memberName">
         <div class="col">
-          <span >Uri Feldman</span>
+          <span>Uri Feldman</span>
+        </div>
+      </div>
+      <div class="row meetMember">
+        <div class="col">
+          <button mat-button class="meetMemberButton" (click)="changeMemberText('uri')">Meet Uri</button>
         </div>
       </div>
     </div>
 
 
 
-    <div class="col-4 member">
+    <div [ngClass]="{'col-4':true, member:true}">
       <div class="row">
-        <div class="col">
-          <img class="memberImg" src="../assets/img/EranProfile.jpg">
+        <div [ngClass]="{col:true, opacity60:memberInfoSelected!='eran'}">
+          <img (click)="changeMemberText('eran')" class="memberImg pointer" src="../assets/img/EranProfile.jpg">
         </div>
       </div>
       <div class="row memberName">
@@ -201,12 +206,17 @@
           <span>Eran Ayzik</span>
         </div>
       </div>
-
-    </div>
-    <div class="col-4 member memberLeft">
-      <div class="row">
+      <div class="row meetMember">
         <div class="col">
-          <img class="memberImg" src="../assets/img/KennyProfile.jpg">
+          <button mat-button class="meetMemberButton" (click)="changeMemberText('eran')">Meet Eran</button>
+        </div>
+      </div>
+    </div>
+
+    <div [ngClass]="{'col-4':true, member:true, memberLeft:true}">
+      <div class="row">
+        <div [ngClass]="{col:true, opacity60:memberInfoSelected!='kenny'}">
+          <img (click)="changeMemberText('kenny')" class="memberImg pointer" src="../assets/img/KennyProfile.jpg">
         </div>
       </div>
       <div class="row memberName">
@@ -214,7 +224,34 @@
           <span>Kenny Chan</span>
         </div>
       </div>
+      <div class="row meetMember">
+        <div class="col">
+          <button mat-button class="meetMemberButton" (click)="changeMemberText('kenny')">Meet Kenny</button>
+        </div>
+      </div>
+    </div>
 
+
+    <div class="row memberDescription">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col memberInfoName">
+            {{memberInfoName}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col memberInfoTitle">
+            {{memberInfoTitle}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col memberInfoDescription">
+            {{memberInfoDescription}}
+          </div>
+        </div>
+      </div>
+      <div class="col-3"></div>
     </div>
   </div>
 </div>
