@@ -1,563 +1,270 @@
-<div class="mobileHide">
-  <div class="staticMenu">
-    <div class="row">
-      <div class="col-3"></div>
-      <div class="col-2 StaticMenuOption">
-        <span [ngx-scroll-to]="'about'" class="pointer noSelect">About Us</span>
-      </div>
-      <div class="col-2 StaticMenuOption">
-        <span [ngx-scroll-to]="'whatwedo'" class="pointer noSelect">What We Do</span>
-      </div>
-      <div class="col-2 StaticMenuOption">
-        <span [ngx-scroll-to]="'ourteam'" class="pointer noSelect">Our Team</span>
-      </div>
-      <div class="col-2 StaticMenuOption">
-        <span [ngx-scroll-to]="'contact'" class="pointer noSelect">Contact Us</span>
-      </div>
-      <div class="col-3"></div>
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="staticMenu">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'about'" class="pointer noSelect">About Us</span>
     </div>
-  </div>
-
-
-  <div class="logo noSelect">
-    <div style="text-align:center" class="FontTrajan FontLarge">
-      <span class="FontDarkGreen">Bonsai</span><span class="FontGrey">Capital</span>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'whatwedo'" class="pointer noSelect">What We Do</span>
     </div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'ourteam'" class="pointer noSelect">Our Team</span>
+    </div>
+    <div class="col-2 StaticMenuOption">
+      <span [ngx-scroll-to]="'contact'" class="pointer noSelect">Contact Us</span>
+    </div>
+    <div class="col-3"></div>
   </div>
+</div>
 
-  <div class="animatedLogo" alignCenter>
-    <img class="animatedBonsaiLogo" src="../assets/img/bonsailogo_animated.svg">
+
+<div class="logo noSelect">
+  <div style="text-align:center" class="FontTrajan FontLarge">
+    <span class="FontDarkGreen">Bonsai</span><span class="FontGrey">Capital</span>
   </div>
+</div>
+
+<div class="animatedLogo" alignCenter>
+  <img class="animatedBonsaiLogo" src="../assets/img/bonsailogo_animated.svg">
+</div>
 
 
-  <div class="about" id="about">
-    <div class="row BackgroundGray AboutHeaderPadding">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">About us</span>
-          </div>
+<div class="about" id="about">
+  <div class="row BackgroundGray AboutHeaderPadding">
+    <div class="col">
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="SectionHeader">About us</span>
         </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
+      </div>
+      <div class="row">
+        <div class="col alignCenter noSelect SectionSeperator">
           <span>
             <svg height="7" width="200">
               <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
             </svg>
           </span>
-          </div>
         </div>
       </div>
-    </div>
-
-    <div class="row aboutBasics BackgroundGray">
-      <div class="col-1"></div>
-      <div class="col-3 alignRight">
-        <img class="bonsaiLogo" src="../assets/img/bonsailogostrokedL.png">
-      </div>
-      <div class="col-7 aboutBasicsMainText">
-        <span>Bonsai Capital's investment banking services are centered on international equity and technology made in Israel<br><br></span>
-        <span>Bonsai Capital's strength lies in its leader's experience to identify and screen deal-flow for investment purposes and on its proven ability to make the right connections between investors/buyers and companies/sellers. </span>
-      </div>
-      <div class="col-1"></div>
     </div>
   </div>
 
-
-
-
-  <div class="WhatWeDo" id="whatwedo">
-    <div class="row">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">What We Do</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </div>
-        </div>
-      </div>
+  <div class="row aboutBasics BackgroundGray">
+    <div class="col-1"></div>
+    <div class="col-3 alignRight">
+      <img class="bonsaiLogo" src="../assets/img/bonsailogostrokedL.png">
     </div>
-
-    <div class="row WhatWeDoOptions">
-      <div class="col-2"></div>
-      <div class="col-2 capability">
-        <div class="row">
-          <div class="col alignCenter">
-            <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'InvestmentBanking'}" (click)="selectWhatWeDo('InvestmentBanking')" src="../assets/img/bank.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="capabilitiesHeader">Investment Banking</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-2 capability">
-        <div class="row">
-          <div class="col alignCenter">
-            <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'FundRaising'}" (click)="selectWhatWeDo('FundRaising')" src="../assets/img/money.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="capabilitiesHeader">Fund Raising</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-2 capability">
-        <div class="row">
-          <div class="col alignCenter">
-            <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'MNA'}" (click)="selectWhatWeDo('MNA')" src="../assets/img/puzzle.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="capabilitiesHeader">M&A</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-2 capability">
-        <div class="row">
-          <div class="col alignCenter">
-            <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'BusinessDevelopment'}" (click)="selectWhatWeDo('BusinessDevelopment')" src="../assets/img/graph.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="capabilitiesHeader">Business Development</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-2 capability"></div>
+    <div class="col-7 aboutBasicsMainText">
+      <span>Bonsai Capital provides boutique investment banking services, bringing together Israeli technology companies and international equity, financial and strategic in nature. Bonsai Capital's services include raising growth funds for Israel-based technology companies and scouting investment and M&A opportunities for international firms, financial & strategic.<br><br></span>
+      <span>Bonsai Capital maintains and serves a large investor community, based primarily in North America, China, Japan, and Australia, with local partners and affiliates based in Hong-Kong, Japan, and Australia.<br><br></span>
+      <span>The company's strength lies in its team's ability to screen attractive opportunities for investment & acquisitions and guide its technology clients through the complex process of raising funds or selling their company. Bonsai Capital’s local Israeli team has many years of experience in managing and growing high-tech companies as well as in investment management acting both in top management and VC roles.</span>
     </div>
-    <div class="row WhatWeDoContent">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col-4 WhatWeDoContentHeader alignRight">
-            <span>{{whatWeDoLeft}}</span>
-          </div>
-          <div class="col-8 WhatWeDoContentMain alignLeft">
-            <span>{{whatWeDoRight}}</span>
-          </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+
+
+
+
+<div class="WhatWeDo" id="whatwedo">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="SectionHeader">What We Do</span>
         </div>
       </div>
-      <div class="col-2"></div>
+      <div class="row">
+        <div class="col alignCenter noSelect SectionSeperator">
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 
-
-  <div class="ourTeam" id="ourteam">
-    <div class="row">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">The Team</span>
-          </div>
+  <div class="row WhatWeDoOptions">
+    <div class="col-3"></div>
+    <div class="col-2 capability">
+      <div class="row">
+        <div class="col alignCenter">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'Scouting'}" (click)="selectWhatWeDo('Scouting')" src="../assets/img/bank.jpg">
         </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="capabilitiesHeader">Scouting</span>
         </div>
       </div>
     </div>
-
-
-
-    <div class="row profiles">
-
-      <div [ngClass]="{'col-4':true, member:true, memberRight:true}">
-        <div class="row">
-          <div [ngClass]="{col:true, opacity60:memberInfoSelected!='uri'}">
-            <img (click)="changeMemberText('uri')" class="memberImg pointer" src="../assets/img/UriProfile.jpg">
-          </div>
-        </div>
-        <div class="row memberName">
-          <div class="col">
-            <span>Uri Feldman</span>
-          </div>
-        </div>
-        <div class="row meetMember">
-          <div class="col">
-            <button mat-button class="meetMemberButton" (click)="changeMemberText('uri')">Meet Uri</button>
-          </div>
+    <div class="col-2 capability">
+      <div class="row">
+        <div class="col alignCenter">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'FundRaising'}" (click)="selectWhatWeDo('FundRaising')" src="../assets/img/money.jpg">
         </div>
       </div>
-
-
-
-      <div [ngClass]="{'col-4':true, member:true}">
-        <div class="row">
-          <div [ngClass]="{col:true, opacity60:memberInfoSelected!='eran'}">
-            <img (click)="changeMemberText('eran')" class="memberImg pointer" src="../assets/img/EranProfile.jpg">
-          </div>
-        </div>
-        <div class="row memberName">
-          <div class="col">
-            <span>Eran Ayzik</span>
-          </div>
-        </div>
-        <div class="row meetMember">
-          <div class="col">
-            <button mat-button class="meetMemberButton" (click)="changeMemberText('eran')">Meet Eran</button>
-          </div>
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="capabilitiesHeader">Fund Raising</span>
         </div>
       </div>
-
-      <div [ngClass]="{'col-4':true, member:true, memberLeft:true}">
-        <div class="row">
-          <div [ngClass]="{col:true, opacity60:memberInfoSelected!='kenny'}">
-            <img (click)="changeMemberText('kenny')" class="memberImg pointer" src="../assets/img/KennyProfile.jpg">
-          </div>
-        </div>
-        <div class="row memberName">
-          <div class="col">
-            <span>Kenny Chan</span>
-          </div>
-        </div>
-        <div class="row meetMember">
-          <div class="col">
-            <button mat-button class="meetMemberButton" (click)="changeMemberText('kenny')">Meet Kenny</button>
-          </div>
+    </div>
+    <div class="col-2 capability">
+      <div class="row">
+        <div class="col alignCenter">
+          <img [ngClass]="{capabilityImage : true, pointer : true, opacity30 : currentSelectedOption != 'MNA'}" (click)="selectWhatWeDo('MNA')" src="../assets/img/puzzle.jpg">
         </div>
       </div>
-
-
-      <div class="row memberDescription">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <div class="row">
-            <div class="col memberInfoName">
-              {{memberInfoName}}
-            </div>
-          </div>
-          <div class="row">
-            <div class="col memberInfoTitle">
-              {{memberInfoTitle}}
-            </div>
-          </div>
-          <div class="row">
-            <div class="col memberInfoDescription">
-              {{memberInfoDescription}}
-            </div>
-          </div>
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="capabilitiesHeader">M&A</span>
         </div>
-        <div class="col-3"></div>
+      </div>
+    </div>
+    <div class="col-3 capability"></div>
+  </div>
+  <div class="row WhatWeDoContent">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-4 WhatWeDoContentHeader alignRight">
+          <span>{{whatWeDoLeft}}</span>
+        </div>
+        <div class="col-8 WhatWeDoContentMain alignLeft">
+          <span>{{whatWeDoRight}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>
+
+
+<div class="ourTeam" id="ourteam">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col alignCenter noSelect">
+          <span class="SectionHeader">The Team</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col alignCenter noSelect SectionSeperator">
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
 
 
 
-  <div class="contact" id="contact">
-    <div class="row">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">Contact Us</span>
-          </div>
+  <div class="row profiles">
+
+    <div class="col-4 member memberRight">
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/UriProfile.jpg">
         </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </div>
+      </div>
+      <div class="row memberName">
+        <div class="col">
+          <span >Uri Feldman</span>
         </div>
       </div>
     </div>
 
-    <div class="row emailForm">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col-5 alignRight contactText">
-          <span class="FontBold noSelect">
-            Contact us today!<br>
-          </span>
-            <span class="FontBold">
-            info@bonsaicapital.net
-          </span>
-          </div>
-          <div class="col-7">
-            <form action="https://formspree.io/bonsaicapitalmailservice@gmail.com" method="POST">
-              <div class="row">
-                <div class="col">
-                  <mat-form-field class="example-full-width width90percent contactSingle">
-                    <input matInput required type="text" name="Name" placeholder="Name">
-                  </mat-form-field>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <mat-form-field class="example-full-width width90percent contactSingle">
-                    <input matInput required type="text" name="Mail"  placeholder="Mail">
-                  </mat-form-field>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <mat-form-field class="example-full-width width90percent contactMulti">
-                    <textarea rows="5" matInput type="text" name="Message" placeholder="Message"></textarea>
-                  </mat-form-field>
-                </div>
-              </div>
-              <div class="row contactFormButton">
-                <div class="col alignLeft contactFormButton">
-                  <button mat-raised-button type="submit" value="Send" color="primary">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
+
+
+    <div class="col-4 member">
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/EranProfile.jpg">
         </div>
       </div>
-      <div class="col-2"></div>
+      <div class="row memberName">
+        <div class="col">
+          <span>Eran Ayzik</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-4 member memberLeft">
+      <div class="row">
+        <div class="col">
+          <img class="memberImg" src="../assets/img/KennyProfile.jpg">
+        </div>
+      </div>
+      <div class="row memberName">
+        <div class="col">
+          <span>Kenny Chan</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
-<div class="mobileShow">
+
+
+
+<div class="contact" id="contact">
   <div class="row">
     <div class="col">
-      <div class="logoMobile noSelect">
-        <div style="text-align:center" class="FontTrajan">
-          <span class="FontDarkGreen">Bonsai</span><span class="FontGrey">Capital</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col mobileAnimatedLogo">
-      <img class="mobileAnimatedBonsaiLogo" src="../assets/img/bonsailogo_animated.svg">
-    </div>
-  </div>
-
-
-  <div class="row BackgroundGray mobileAbout">
-
-    <div class="row mobileAbout">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">About us</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-          <span>
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row BackgroundGray mobileAboutContent">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <span class="mobileAboutContentHeader">Bonsai Capital's investment banking services are centered on international equity and technology made in Israel<br><br></span>
-        <span>Bonsai Capital's strength lies in its leader's experience to identify and screen deal-flow for investment purposes and on its proven ability to make the right connections between investors/buyers and companies/sellers. </span>
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-
-  </div>
-
-  <div class="row BackgroundWhite mobileWhatWeDo">
-
-    <div class="row mobileWhatWeDo">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">About us</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-          <span>
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mobileWhatWeDoContent">
-      <div class="col-3">
-        <img class="mobileWhatWeDoImage" src="../assets/img/bank.jpg">
-        <span class="mobileWhatWeDoOption">Investment Banking</span>
-      </div>
-      <div class="col-3">
-        <img class="mobileWhatWeDoImage" src="../assets/img/money.jpg">
-        <span class="mobileWhatWeDoOption">Fund Raising</span>
-      </div>
-      <div class="col-3">
-        <img class="mobileWhatWeDoImage" src="../assets/img/puzzle.jpg">
-        <span class="mobileWhatWeDoOption">M&A</span>
-      </div>
-      <div class="col-3">
-        <img class="mobileWhatWeDoImage" src="../assets/img/graph.jpg">
-        <span class="mobileWhatWeDoOption">Business Development</span>
-      </div>
-    </div>
-    <div class="row mobileWhatWeDoInfo">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <div class="row">
-          <div class="col">
-            <span class="FontBold">The Israeli technology market is considered in the world to be very attractive for investments. The innovation demonstrated in the tens of thousands of start-ups that were established in the last thirty years led to defining Israel as a "start-up nation".</span>
-          </div>
-        </div>
-        <div class="row mobileWhatWeDoInfoMore">
-          <div class="col">
-            <span>Bonsai Capital is able to assist your company in different activities all needed for a successful journey. These activities include: Compiling an investment strategy, Defining investor target communities (Type of investor, Geography, financial vs. strategic), Preparing the company for due-diligence process, Developing business plan and marketing material, Initiate the marketing activities.</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-  </div>
-
-  <div class="row BackgroundWhite mobileTeam">
-
-    <div class="row mobileTeam">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">Our Team</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-          <span>
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-4 mobileTeamMember">
-        <div class="row">
-          <div class="col">
-            <img class="mobileTeamMemberImage" src="../assets/img/UriProfile.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col mobileTeamMemberName">
-                <span>Uri Feldman</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 mobileTeamMember">
-        <div class="row">
-          <div class="col">
-            <img class="mobileTeamMemberImage" src="../assets/img/EranProfile.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col mobileTeamMemberName">
-                <span>Eran Ayzik</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 mobileTeamMember">
-        <div class="row">
-          <div class="col">
-            <img class="mobileTeamMemberImage" src="../assets/img/KennyProfile.jpg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col mobileTeamMemberName">
-                <span>Kenny Chan</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mobileTeamInfo">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <span>Our team at BonsaiCapital includes:<br><br></span>
-        <span class="FontBold">Uri Feldman<br></span>
-        <span>Managing Partner & Co-Founder<br>a high tech veteran, with over 25 years in operational management, 15 years out of them in a CEO role<br><br></span>
-        <span class="FontBold">Eran Ayzik<br></span>Managing Partner<br>Co-Founder, an accountant in a big accountant firm, and later served as CFO of Dovrat-Shrem, the largest Israeli investment management house<br><br>
-        <span class="FontBold">Kenny Chan<br></span>Director of Business Development, China Region<br>a High Tech business veteran in managing sales and business development in Asia that has held various senior positions from several leading publicly listed companies<br><br>
-          <br>
-          <span>Our team will help lead you with years of experience and world wide connections to achieve business development, fund raising, M&A and investment banking        </span>
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-  </div>
-
-  <div class="row BackgroundWhite mobileContact">
-
-    <div class="row mobileContact">
-      <div class="col">
-        <div class="row">
-          <div class="col alignCenter noSelect">
-            <span class="SectionHeader">Contact Us</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col alignCenter noSelect SectionSeperator">
-          <span>
-            <svg height="7" width="200">
-              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
-            </svg>
-          </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobileContactInfo">
       <div class="row">
-        <div class="col">
-          <span class="FontBold contactHeader">
-            Contact us today!
-          </span>
+        <div class="col alignCenter noSelect">
+          <span class="SectionHeader">Contact Us</span>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <span class="contactMail">
+        <div class="col alignCenter noSelect SectionSeperator">
+          <svg height="7" width="200">
+            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:7" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row emailForm">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-5 alignRight contactText">
+          <span class="FontBold noSelect">
+            Contact us today!<br>
+          </span>
+          <span class="FontBold">
             info@bonsaicapital.net
           </span>
         </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="example-full-width width90percent contactSingle">
+                <input matInput required placeholder="Name">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="example-full-width width90percent contactSingle">
+                <input matInput required placeholder="Mail">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="example-full-width width90percent contactMulti">
+                <textarea rows="5" matInput placeholder="Message"></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="col-2"></div>
   </div>
-
 </div>

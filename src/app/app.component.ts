@@ -23,31 +23,35 @@ export class AppComponent {
 
   whatWeDo =
     {
-      'InvestmentBanking':
+      'Scouting':
         {
-          'left': 'The Israeli technology market is considered in the world to be very attractive for investments. The innovation demonstrated in the tens of thousands of start-ups that were established in the last thirty years led to defining Israel as a "start-up nation".',
-          'right': 'Bonsai Capital, due to its founder\'s vast network connections, is well positioned to serve the foreign investment community with services that include deal-flow development, Due diligence, deal formation and process management.\n\nThis does not end with the investment. Bonsai Capital remains after the investment is done to closely monitor the assist the invested company, and maintain the parties\' relationship at its highest level.'
+          'left': 'Deal flow development in a large variety of markets',
+          'right': 'Bonsai Capital, through its deep roots and connections in the Israeli technology and industrial communities, is well positioned to serve the foreign investment community, looking for investment and acquisitions opportunities in the Israeli market, with services that include deal-flow development, due diligence, deal formation and process management. This does not end with the investment. Bonsai Capital remains after the investment is done to closely monitor and assist clients’ local portfolio companies and facilitate successful integration over the long term.'
         },
       'FundRaising':
         {
-          'left': 'Bonsai Capital\'s investor network include venture capital and private equity firms, family house investment firms, private investors, and corporate VC\'s. The geographic spread is in all five continents.',
-          'right': 'Bonsai Capital offer its fund raising services to companies that meet the following profile, Selling stage, Seeking to raise $2M and up, Need the funds to grow the business, Technology or industrial company\n\nBonsai Capital is able to assist your company in different activities all needed for a successful journey. These activities include: Compiling an investment strategy, Defining investor target communities (Type of investor, Geography, financial vs. strategic), Preparing the company for due-diligence process, Developing business plan and marketing material, Initiate the marketing activities.'
+          'left': 'Growth fundraising, Private and public option, financial & strategic investors',
+          'right': 'Bonsai Capital offers its fundraising services to companies that meet the following profile: \n' +
+            '\n' +
+            '•\tselling stage;\n' +
+            '•\tSeeking to raise $1.5M and up;\n' +
+            '•\tRequire funds to grow business;\n' +
+            '•\tTechnology or industrial company.\n' +
+            '\n' +
+            'Bonsai Capital assists fundraising clients in: Formulating an investment strategy, defining investor target communities, preparing the company for a due-diligence process, developing a business plan and marketing material, executing the investor search plan and structuring the right investment agreement.\n' +
+            'Additionally, Bonsai Capital has developed a unique expertise, in cooperation with its local Australian affiliate, in guiding Israeli companies through an IPO on the Australian Stock Exchange (ASX).\n\n\n'
         },
       'MNA':
         {
-          'left': 'No matter the reason (acquisition, sale, merger) that drive the M&A process, to assure the highest probability for success, it needs to be planned and executed thoroughly',
-          'right': 'Bonsai Capital\'s experienced team will assist the buyer/seller through the process with the following activities: Market - Market analysis, competition analysis, Company - Operational analysis, Leading team review, Finance – Accounting analysis, Valuation analysis, Legal – Customer and supplier contracts, IP\n\nBonsai Capital is utilizing its market connections through international investment bankers that specialize in locating the right candidates for the M&A opportunity, and through its affiliation with Sunbelt Network, the world\'s largest M&A firm for SMB\'s. Sunbelt has around 300 offices in all five continents, with around 3000 people, and 10,000 deals on the table at any given moment. Sunbelt\'s huge connection network is yet another strength multiplier for Bonsai Capital in serving your M&A needs.'
-        },
-      'BusinessDevelopment':
-        {
-          'left': 'Bonsai will find you the right channels in the target countries whether they be agents, resellers, distributors, or OEM partners.',
-          'right': 'Growing your business usually requires developing your ability to sell and service globally. Many products require ongoing support so a good local support representative is an enabler for sales. However, it\'s not an easy job to find the right local partner for your company with language and culture barriers.\n\nBonsai Capital is offering its BD services to local Israeli technology and industrial companies utilizing its international investment banker network. At this point Bonsai Capital is offering its service in APAC only. APAC has become the locomotive of the world economy and some countries in APAC are huge market by themselves (China, Korea, India, Japan).'
+          'left': 'Preparing the company for sale, strategic acquisition',
+          'right': 'Bonsai Capital\'s experienced team assists buyers and sellers through the process with the following activities: Market analysis, competition analysis, company operational analysis, Leading team review, financial and accounting analysis, valuation analysis, customer and supplier contract review, and IP review. \n\n' +
+            'Bonsai Capital utilizes its global market connections and international network of investment bankers to identify the right candidates for M&A transactions.'
         },
     };
 
-  whatWeDoLeft = this.whatWeDo.InvestmentBanking.left;
-  whatWeDoRight = this.whatWeDo.InvestmentBanking.right;
-  currentSelectedOption = 'InvestmentBanking';
+  whatWeDoLeft = this.whatWeDo.Scouting.left;
+  whatWeDoRight = this.whatWeDo.Scouting.right;
+  currentSelectedOption = 'Scouting';
 
   public selectWhatWeDo (selected) {
     if (this.whatWeDo[selected]) {
