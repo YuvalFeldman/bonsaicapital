@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="staticMenu">
   <div class="row">
     <div class="col-3"></div>
@@ -165,46 +164,57 @@
   <div class="row profiles">
 
     <div class="col-4 member memberRight">
-      <div class="row">
-        <div class="col">
-          <img class="memberImg" src="../assets/img/UriProfile.jpg">
+      <div [ngClass]="{opacity60 : memberInfoSelected != 'uri'}">
+        <div class="row">
+          <div class="col">
+            <img class="memberImg pointer" src="../assets/img/UriProfile.jpg" (click)="changeMemberText('uri')">
+          </div>
         </div>
-      </div>
-      <div class="row memberName">
-        <div class="col">
-          <span >Uri Feldman</span>
+        <div class="row memberName">
+          <div class="col">
+            <span >Uri Feldman</span>
+          </div>
         </div>
       </div>
     </div>
-
-
 
     <div class="col-4 member">
-      <div class="row">
-        <div class="col">
-          <img class="memberImg" src="../assets/img/EranProfile.jpg">
+      <div [ngClass]="{opacity60 : memberInfoSelected != 'eran'}">
+        <div class="row">
+          <div class="col">
+            <img class="memberImg pointer" src="../assets/img/EranProfile.jpg" (click)="changeMemberText('eran')">
+          </div>
+        </div>
+        <div class="row memberName">
+          <div class="col">
+            <span>Eran Ayzik</span>
+          </div>
         </div>
       </div>
-      <div class="row memberName">
-        <div class="col">
-          <span>Eran Ayzik</span>
-        </div>
-      </div>
-
     </div>
+
     <div class="col-4 member memberLeft">
-      <div class="row">
-        <div class="col">
-          <img class="memberImg" src="../assets/img/KennyProfile.jpg">
+      <div [ngClass]="{opacity60 : memberInfoSelected != 'kenny'}">
+        <div class="row">
+          <div class="col">
+            <img class="memberImg pointer" src="../assets/img/KennyProfile.jpg" (click)="changeMemberText('kenny')">
+          </div>
+        </div>
+        <div class="row memberName">
+          <div class="col">
+            <span>Kenny Chan</span>
+          </div>
         </div>
       </div>
-      <div class="row memberName">
-        <div class="col">
-          <span>Kenny Chan</span>
-        </div>
-      </div>
-
     </div>
+  </div>
+
+  <div class="memberDescription row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <p class="alignLeft">{{memberInfoDescription}}</p>
+    </div>
+    <div class="col-2"></div>
   </div>
 </div>
 

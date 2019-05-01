@@ -76,7 +76,7 @@ export class AppComponent {
     "uri":{
       "name":"Uri Feldman",
       "title":"Managing Partner, Co-Founder",
-      "description":"A high tech veteran, with over 25 years in operational management, 15 years out of them in a CEO role. Mr. Feldman started his career with Orbotech LTD (NASDAQ-ORBK, specialized in machine vision), established a very successful software company in the PCB market named Frontline PCB Solutions, and later has been in the role of an entrepreneur in a few start-ups. Mr. Feldman raised around $20M to his companies from various sources, and lead M&A activities from the CEO chair. In the last few years he has been involved in the investment banking service through his activity in Sunbelt and later Bonsai Capital"
+      "description":"Mr. Feldman is a high tech veteran, with over 25 years in operational management, 15 years out of them in a CEO role. Mr. Feldman started his career with Orbotech LTD (NASDAQ-ORBK, specialized in machine vision), established a very successful software company in the PCB market named Frontline PCB Solutions, and later has been in the role of an entrepreneur in a few start-ups. Mr. Feldman raised around $20M to his companies from various sources, and lead M&A activities from the CEO chair. In the last few years he has been involved in the investment banking service through his activity in Sunbelt and later Bonsai Capital"
     },
     "eran":{
       "name":"Eran Ayzik",
@@ -108,7 +108,7 @@ export class AppComponent {
 
     var url = "https://script.google.com/macros/s/AKfycbzwbE1RAs09WwaxhnUodcOBDilaz8uRgFc_uATQze1VYBQX5H0/exec";
 
-    return this.http.get(url)
+    return this.http.get(url);
 
 
   }

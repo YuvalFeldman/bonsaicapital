@@ -74,6 +74,9 @@ body{
 .FontLarge{
   font-size: 5em;
 }
+.FontMedium{
+  font-size: 3em;
+}
 .noSelect{
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -383,8 +386,11 @@ body{
   color: #0e5c11;
   margin: 0 0 1em 0;
 }
-.memberInfoDescription{
-  /*padding: 1em 0 0 0;*/
+.memberSelected{
+  opacity: 100%;
+}
+.memberUnselected{
+  opacity: 50%;
 }
 
 
